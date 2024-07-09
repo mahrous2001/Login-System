@@ -1,0 +1,56 @@
+/* =============== Constant =============== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #24353F;
+}
+
+.bg-main {
+  background-color: #24353F;
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#main .form-control {
+  background-color: transparent !important;
+}
+
+#main input::placeholder {
+  color: white !important;
+}
+
+.m-10 {
+  margin: 10rem !important;
+}
+
+.pb-13 {
+  padding: 3rem !important;
+  padding-bottom: 9.1rem !important;
+}
+
+/* ==================== Inputs Form ==================== */
+#main .form-control:focus {
+  border-color: #d99c39;
+  box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+#main .form-control.is-invalid:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.25rem #dc354540;
+}
+
+#main .is-valid:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.25rem #19875440;
+}

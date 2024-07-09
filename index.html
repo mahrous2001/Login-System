@@ -1,0 +1,93 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-main d-none" id="navbar">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">SMART LOGIN</a>
+      <button class="navbar-toggler bg-white text-white" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-white text-white"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto ms-2 mb-lg-0">
+          <li class="nav-item">
+            <button id="logout" class="btn btn-outline-warning" aria-current="page">Logout</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container p-5" id="main">
+    <div id="login" class="w-75 mx-auto  p-5 text-center bg-main ">
+      <h1 class="text-info py-3">Smart Login System</h1>
+      <input type="text" placeholder="Enter Your Email" class="form-control my-3 text-white" id="loginEmailId">
+      <input type="password" placeholder="Enter Your Password" class="form-control mb-2 text-white"
+        id="loginPasswordlId">
+      <p id="messageLogin" class="text-danger d-none"></p>
+      <button id="loginButtonId" class="btn btn-outline-info w-100 my-3">Login</button>
+      <p class="text-white">Don't have an account? <a href="#signup" class="text-white" id="moveToSignupId">Sign Up</a>
+      </p>
+    </div>
+
+
+    <div id="signup" class=" mx-auto p-5 d-none justify-content-center  align-items-center ">
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <div class="bg-main  pb-13">
+            <h3 class="text-warning pb-2">Please Follow These Steps For Register Successfuly:</h3>
+            <p class="text-white pb-2"><i class="fa-solid fa-circle text-warning"></i> <span
+                class="text-success">Name:</span> First Letter Should be Capital And Minmum Lenght Of Letters Is 3 &
+              Maixmum Length Of Letters Is 25</p>
+            <p class="text-white pb-2"><i class="fa-solid fa-circle text-warning"></i> <span
+                class="text-success">Email:</span> Should Contaion @ & .</p>
+            <p class="text-white pb-5"><i class="fa-solid fa-circle text-warning"></i> <span
+                class="text-success">Password:</span> Should Contaion Capital Letter, Number& Special Character, Minmum
+              Length Is 6 & Maxmum Length Is 16</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="text-center bg-main p-5">
+            <h1 class="text-info py-3">Smart Login System</h1>
+            <input type="text" placeholder="Enter Your Name" class="form-control my-3 text-white" id="nameId">
+            <input type="text" placeholder="Enter Your Email" class="form-control my-3 text-white" id="emailId">
+            <input type="password" placeholder="Enter Your Password" class="form-control mb-3 mb-2 text-white"
+              id="passwordId">
+            <input type="password" placeholder="Confirm Your Password" class="form-control mb-2 text-white"
+              id="passworConfirmdId">
+            <p id="message" class="text-success d-none"></p>
+            <button id="signupButtonId" class="btn btn-outline-info w-100 my-3">Sign Up</button>
+            <p class="text-white">You have an account? <a href="#login" class="text-white" id="moveToLoginId">Sign
+                In</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="homeId" class=" mx-auto p-2 d-none  ">
+      <div id="home" class="bg-main text-center">
+
+      </div>
+      <div id="travel" class="row g-5">
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
